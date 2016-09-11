@@ -179,7 +179,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover {
   color: #fff;
   outline: none;
-  
+
   
 }
 .navbar-default .nav li a:focus {
@@ -706,11 +706,13 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #F5634A;
+  background: #000;
+  color: #fff;
 }
 ::selection {
   text-shadow: none;
-  background: #F5634A;
+  background: #000;
+  color: #fff;
 }
 img::selection {
   background: transparent;

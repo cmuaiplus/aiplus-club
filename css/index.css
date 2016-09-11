@@ -141,3 +141,14 @@ html, body {
 .aiplus-desc a:hover {
     text-decoration: underline;
 }
+
+.events tr {
+    text-align: left;
+    font-size: 17px;
+    font-family: "Open Sans", Helvetica;
+}
+
+.events tr.tr-title {
+    font-size: 22px;
+    text-align: center !important;
+}
