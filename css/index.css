@@ -36,7 +36,7 @@ html, body {
 .container .aiplus-header {
     width: 80%;
     position: absolute;
-    top: 200px;
+    top: 150px;
     z-index: 3;
 }
 
@@ -55,8 +55,8 @@ html, body {
 
 .container .aiplus-desc {
     font-size: 20px;
-    width: 50%;
-    left: 25%;
+    width: 70%;
+    left: 15%;
     color: white;
     top: 200px;
     position: absolute;
