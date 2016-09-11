@@ -36,7 +36,7 @@ html, body {
 .container .aiplus-header {
     width: 80%;
     position: absolute;
-    top: 100px;
+    top: 200px;
     z-index: 3;
 }
 
@@ -50,6 +50,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     line-height: 1.6rem;
     text-shadow: 0 0 1px rgba(0,0,0,.1);
+    line-height: 1.2;
 }
 
 .container .aiplus-desc {
@@ -57,7 +58,7 @@ html, body {
     width: 50%;
     left: 25%;
     color: white;
-    top: 300px;
+    top: 200px;
     position: absolute;
     font-weight: 300;
 }
@@ -65,6 +66,7 @@ html, body {
 .aiplus-placeholder {
     display: inline-block !important;
     font-weight: 500;
+    line-height: 1.2;
 }
 
 .aiplus-cursor {
