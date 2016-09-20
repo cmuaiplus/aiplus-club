@@ -1,6 +1,8 @@
 function playRandomWord(prev) {
 	var words = ['Healthcare', 'Education', 'Transportation', 'Finance',
-				 'Law', 'Government', 'Food', 'SaaS', 'Genomics', 'Travel'
+				 'Law', 'Government', 'Food', 'SaaS', 'Genomics', 'Travel',
+				 'Fitness', 'Management', 'Manufacturing', 'Art', 'Design', 
+				 'Photography', 'Sport', 'Science', 'Gaming', 'Space'
 		].filter(function(word) {
 		return prev == null || word != prev;
 	});
