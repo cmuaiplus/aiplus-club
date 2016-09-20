@@ -47,5 +47,13 @@ function signup() {
 	});
 }
 $(function() {
+	// play AI + X words.
 	playRandomWord();
+	// use high-resolution image.
+	$('<img/>').attr('src', '/img/bg1-original.jpg').load(function() {
+		console.log('loaded');
+	   // $(this).remove(); // prevent memory leaks as @benweet suggested
+	   $('header').toggleClass('highres');  
+	});
 });
+
