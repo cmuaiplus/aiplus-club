@@ -13,7 +13,8 @@
     <meta property="og:title" content="AI+">
     <meta property="og:description" content="AI+ is ... "> <!--TODO-->
     <meta property="og:image" content=""><!--TODO-->
-    <title>AI+</title>
+    <title>AI+ Club</title>
+
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +28,9 @@
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Lato:400,100,300,700" rel="stylesheet" type="text/css">
+
+    <!-- Event CSS -->
+    <link href="css/event.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -106,12 +110,12 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">THE MISSION</h2>
-<!--                     <h3 class="section-subheading">Where Stanford ingenuity meets the world of healthcare </h3>
- -->                </div>
+                    <h3 class="section-subheading"></h3>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-justify">
-                    <p class="text-muted large"><a href="https://www.facebook.com/groups/1010837725653631">Welcome to the <strong>AI+</strong></a>! We are a group of passionate researchers, hackers, entrepreneurs and enthusiasts envisioning the future powered by morally good AI. Let's watch AI disrupt the world, vertical by vertical. AI+ will start with a series of AI + X events. To tease a bit, "X" can be transportation, healthcare, education, law enforcement, finance, etc. We'll start with tech talks and panel discussions, but we are actively exploring creative ways to catalyze and share ideas.</p>
+                    <p class="text-muted large">AI+ is a "tribe" of researchers, hackers, entrepreneurs and enthusiasts envisioning the future powered by morally good AI. Let's watch AI disrupt the world, vertical by vertical. We organize a series of AI + X events. To tease a bit, "X" can be transportation, healthcare, education, law enforcement, finance, etc... We've started with tech talks and panel discussions, but we are actively exploring creative ways to catalyze and share ideas.</p>
                     <br>
                     <div class="col-md-8 col-md-offset-2">
                         <center>
@@ -154,76 +158,74 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Events Section -->
+    <div style="display: none;" id="events-template"> <!-- events template -->
+        <a href="{{link}}" style="text-decoration: none; color: #000;">
+            <div class="card-media">
+                <!-- media container -->
+                <div class="card-media-object-container">
+                  <div class="card-media-object" style="background-image: url({{img}});"></div>
+                </div>
+                <!-- body container -->
+                <div class="card-media-body">
+                  <div class="card-media-body-top">
+                    <span class="subtle">{{date}}</span>
+                  </div>
+                  <span class="card-media-body-heading">{{title}}</span>
+                  <div class="card-media-body-supporting-bottom">
+                    <span class="card-media-body-supporting-bottom-text subtle">{{location}}</span>
+                  </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
     <section id="events">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Recent Events</h2>
+                    <h2 class="section-heading">Events</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
-            <div class="metro">
-                 
-                <div style="width: 400px; height: 200px; " class="tile double live ol-transparent" data-role="live-tile" data-click="transform">
-                    <div class="tile-content image">
-                        <img src="img/events/lumiata.jpg">
+
+            <div class="container">
+                <ul class="nav nav-pills">
+                    <li class="active">
+                        <a href="#healthcare" data-toggle="tab">Healthcare</a>
+                    </li>
+                    <li><a href="#fintech" data-toggle="tab">Fintech</a>
+                    </li>
+                    <li><a href="#transportation" data-toggle="tab">Transportation</a>
+                    </li>
+                    <li><a href="#china" data-toggle="tab">China</a>
+                    </li>
+                    <li><a href="#research" data-toggle="tab">Basic Research</a>
+                    </li>
+                </ul>
+                <br>
+                <br>
+
+                <div class="tab-content clearfix">
+                    <div class="tab-pane active" id="healthcare">
+                        
                     </div>
-                    <div class="tile-status bg-dark opacity">
-                        <span class="label"> AI + Healthcare with Lumiata Founder & CEO, Ash Damle. </span>
+                    <div class="tab-pane" id="fintech">
+                        
                     </div>
-                </div>    
-                <div style="width: 400px; height: 200px; " class="tile double live ol-transparent" data-role="live-tile" data-click="transform">
-                    <div class="tile-content image">
-                        <a href="https://www.facebook.com/events/344879409184811/"><img src="img/events/kai-fu-lee.jpg"></a>
+                    <div class="tab-pane" id="transportation">
+                        
                     </div>
-                    <div class="tile-status bg-dark opacity">
-                        <span class="label"> AI + China : The Golden Age with Dr. Kai-Fu Lee </span>
+                    <div class="tab-pane" id="china">
+                        
                     </div>
-                </div>   
-                <br><br><br><br><br><br>
+                    <div class="tab-pane" id="research">
+                        
+                    </div>
+                        
+              </div>
             </div>
-            <br><br><br><br><br><br>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Past Events</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <table class="table events">
-                    <thead>
-                      <tr class="tr-title">
-                        <th>Date</th>
-                        <th>Series</th>
-                        <th>Event</th>
-                        <th>Speaker</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>May 30, 2016.</td>
-                        <td>AI+Transportation</td>
-                        <td>Google's progress on driverless cars </td>
-                        <td>Jiajun Zhu, founding member of Google's self-driving car project.</td>
-                      </tr>
-                      <tr>
-                        <td>Jun 27, 2016.</td>
-                        <td>AI+Transportation</td>
-                        <td> Small group dinner with drive.ai founder.</td>
-                        <td>Brody Huval, co-founder at drive.ai</td>
-                      </tr>
-                      <tr>
-                        <td>Jul 27, 2016.</td>
-                        <td>AI Safety</td>
-                        <td>Safe Access to super-intelligent tools</td>
-                        <td>Eric Drexler: author of Nanosystems.</td>
-                      </tr>
-                    </tbody>
-                    </table>
-                </div>
-            </div>
+           
         </div>
     </section>
 
@@ -350,14 +352,6 @@
 
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
-    <!-- Metro Live Tiles -->
-    <script src="js/jquery.widget.min.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
-    <script src="js/jquery.easing.1.3.min.js"></script>
-    <link href="css/metro-bootstrap.css" rel="stylesheet">
-    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">
-    <script src="js/metro.min.js"></script>
-
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -375,6 +369,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
     <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+
     <script>
         function getUrlParameter(sParam)
         {
@@ -401,6 +397,105 @@
             $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
             $('#success > .alert-success').append("<strong>Your message has been sent. </strong>");
             $('#success > .alert-success').append('</div>');
+        }
+
+        // load events.
+        var EVENTS = {
+            healthcare: [
+                {
+                    title: 'Arterys: Striking a Big Step Forward for AI and Machine Learning in Healthcare',
+                    location: 'Stanford Graduate School of Business',
+                    date: 'Feb 16th, 2017',
+                    img: 'img/events/artereys.png',
+                    link: 'http://us1.campaign-archive1.com/?u=dfe1971430cfa22545ae7ba85&id=1b1fffd11e'
+                },
+                {
+                    link: 'http://us1.campaign-archive1.com/?u=dfe1971430cfa22545ae7ba85&id=d848ec1530',
+                    title: 'AI + Healthcare with Nikhil Buduma, Cofounder & Chief Scientist of Remedy Health.',
+                    location: 'Stanford Computer Science',
+                    date: 'Dec 9th, 2016',
+                    img: 'img/events/remedy.jpg'
+                },
+                {
+                    link: 'http://us1.campaign-archive1.com/?u=dfe1971430cfa22545ae7ba85&id=4f1f07e206',
+                    title: 'AI + Healthcare with Lumiata Founder & CEO, Ash Damle.',
+                    location: 'Stanford Computer Science',
+                    date: 'October 21st, 2016',
+                    img: 'img/events/lumiata.jpg'
+                },
+
+            ],
+            fintech: [
+                {
+                    link: 'http://us1.campaign-archive2.com/?u=dfe1971430cfa22545ae7ba85&id=41c3c01446',
+                    title: 'With Numerai Founders: Can Wall Street Work Like Open Source?',
+                    date: 'Mar 17th, 2017',
+                    img: 'img/events/numerai.jpg',
+                    location: 'Stanford Computer Science'
+                },
+                {
+                    link: 'http://us1.campaign-archive2.com/?u=dfe1971430cfa22545ae7ba85&id=2ebd1567b5',
+                    title: 'AI+ Insurance Dinner with Metromile CEO, Dan Preston.',
+                    date: 'Jan 25th, 2017',
+                    location: 'Stanford Computer Science',
+                    img: 'img/events/metromiles.png'
+                },
+            ],
+            china: [
+                {
+                    title: 'AI + China : The Golden Age with Dr. Kai-Fu Lee',
+                    img: 'img/events/kai-fu-lee.jpg',
+                    date: 'October 5th, 2016',
+                    location: 'Stanford GSB',
+                    link: 'http://us1.campaign-archive1.com/?u=dfe1971430cfa22545ae7ba85&id=608eb990b9'
+                },
+                {
+                    title: 'AI + China : A Conversation with Face++ Cofounder',
+                    img: 'img/events/face++.png',
+                    date: 'Feb 5th, 2017',
+                    location: 'Stanford Li Ka Shing Center',
+                    link: 'https://www.faceplusplus.com/'
+                }
+            ],
+            transportation: [
+                {
+                    title: 'Small group dinner with drive.ai cofounder (Brody Huval)',
+                    img: 'img/events/drive.png',
+                    link: 'https://www.drive.ai',
+                    location: 'Stanford GSB',
+                    date: 'Jun 27th, 2016',
+                },
+                {
+                    title: 'Google\'s progress on driverless cars with Jiajun Zhu',
+                    img: 'img/events/waymo.jpg',
+                    date: 'May 30th, 2016',
+                    location: 'Stanford GSB',
+                    link: 'https://www.linkedin.com/in/jiajun/'
+                },
+            ],
+            research: [
+                {
+                    title: 'Invited Talk by Samy Bengio (Google Brain)',
+                    date: 'Nov 29th, 2016',
+                    location: 'Stanford Computer Science',
+                    link: 'http://us1.campaign-archive2.com/?u=dfe1971430cfa22545ae7ba85&id=ddca270845',
+                    img: 'img/events/samy-bengio.jpg'
+                },
+                {
+                    title: 'Safe Access to super-intelligent tools',
+                    date: 'Jul 27th, 2016',
+                    location: 'Stanford Computer Science',
+                    link: 'https://www.facebook.com/events/1722672044662931/',
+                    img: 'img/events/drexler.jpg'
+                },
+            ]
+        };
+
+        var template = $('#events-template').html();
+        for(var theme in EVENTS) {
+            for(var event of EVENTS[theme]) {
+                $('#' + theme).append(Mustache.render(template, event));
+            }
         }
     </script>
 
