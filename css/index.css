@@ -36,16 +36,17 @@ html, body {
 .container .aiplus-header {
     width: 80%;
     position: absolute;
-    top: 150px;
+    top: 200px;
     z-index: 3;
     left: 10%;
 }
+
 
 .container .aiplus-title {
     display: block;
     color: #fff;
     text-align: center;
-    font-size: 80px;
+    font-size: 10vmin;
     font-weight: 900;
     font-family: 'Open Sans',sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -54,12 +55,13 @@ html, body {
     line-height: 1.2;
 }
 
+
 .container .aiplus-desc {
-    font-size: 25px;
+    font-size: 4vmin;
     width: 70%;
     left: 15%;
     color: white;
-    top: 200px;
+    top: 150px;
     position: absolute;
     font-weight: 300;
 }
