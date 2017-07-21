@@ -1,5 +1,3 @@
-This is the static webpage for SHIFT. The bootstrap template is Agency from startBootstrap.com.
+Static webpage for the AI+ club at CMU.
 
-Website at https://shift-stanford.github.io/
-
-Use `python -m SimpleHTTPServer 8000` in development.
+Webpage to be hosted at [cmu.aiplus.club](cmu.aiplus.club).
