@@ -339,7 +339,12 @@ section#team .advisor-col a:hover {
   text-decoration: none;
   color: #000;
 }
-@media (min-width: 767px) {
+section#advisors img,
+section#team img {
+  border-radius: 100px;
+  height: 200px;
+}
+@media (min-wmidth: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
