@@ -210,10 +210,13 @@
                 <br>
 
                 <div class="tab-content clearfix">
+                    <div class="tab-pane active" id="general">
+
+                    </div>
                     <div class="tab-pane active" id="healthcare">
 
                     </div>
-                    <div class="tab-pane" id="fintech">
+                    <!--<div class="tab-pane" id="fintech">
 
                     </div>
                     <div class="tab-pane" id="transportation">
@@ -221,7 +224,7 @@
                     </div>
                     <div class="tab-pane" id="research">
 
-                    </div>
+                    </div>-->
 
               </div>
             </div>
@@ -423,16 +426,25 @@
 
         // load events.
         var EVENTS = {
+            general: [
+                {
+                    title: 'Kickoff',
+                    location: 'Gates Hillman Center',
+                    date: 'February 2018',
+                    img: 'img/events/kickoff.png',
+                    link: ''
+                }
+            ],
             healthcare: [
-                /*{
-                    title: 'Roam Analytics: Bringing Comprehensive Knowledge to Patients, Providers, Professionals, and Life Sciences Companies (Andrew Maas)',
-                    location: 'GHC',
+                {
+                    title: 'Dinner with Andrew Maas and Roam Analytics',
+                    location: 'Casbah',
                     date: 'Fall 2017',
                     img: 'img/events/roam.png',
                     link: ''
-                },*/
-            ],
-            fintech: [
+                },
+            ]//,
+            //fintech: [
                 /*{
                     link: '',
                     title: '',
@@ -440,8 +452,8 @@
                     location: 'GHC',
                     img: ''
                 },*/
-            ],
-            transportation: [
+            //],
+            //transportation: [
                 /*{
                     title: 'drive.ai (Brody Huval)',
                     img: 'img/events/drive.png',
@@ -449,8 +461,8 @@
                     location: 'GHC',
                     date: 'Spring 2018',
                 }*/
-            ],
-            research: [
+            //],
+            //research: [
                 /*{
                     title: 'Petuum: Distributed Machine Learning from Papers to Practice (Eric Xing)',
                     date: 'Fall 2017',
@@ -458,7 +470,7 @@
                     link: '',
                     img: 'img/events/eric-xing.jpg'
                 },*/
-            ]
+            //]
         };
 
         var template = $('#events-template').html();
