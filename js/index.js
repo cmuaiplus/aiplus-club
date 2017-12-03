@@ -1,8 +1,8 @@
 function playRandomWord(prev) {
 	var words = ['Healthcare', 'Education', 'Transportation', 'Finance',
 				 'Law', 'Government', 'Food', 'SaaS', 'Genomics', 'Travel',
-				 'Fitness', 'Management', 'Manufacturing', 'Art', 'Design', 
-				 'Photography', 'Sport', 'Science', 'Gaming', 'Space'
+				 'Fitness', 'Management', 'Manufacturing', 'Art', 'Design',
+				 'Photography', 'Sport', 'Science', 'Gaming', 'Space', 'Cancer'
 		].filter(function(word) {
 		return prev == null || word != prev;
 	});
@@ -55,7 +55,7 @@ $(function() {
 	$('<img/>').attr('src', '/img/bg1-original.jpg').load(function() {
 		console.log('loaded');
 	   // $(this).remove(); // prevent memory leaks as @benweet suggested
-	   $('header').toggleClass('highres');  
+	   $('header').toggleClass('highres');
 	});
 });
 
