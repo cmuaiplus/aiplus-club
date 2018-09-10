@@ -31,8 +31,8 @@
     <link href="css/event.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon2.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon2.ico" type="image/x-icon">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -196,7 +196,7 @@
             <div class="card-media">
                 <!-- media container -->
                 <div class="card-media-object-container">
-                  <div class="card-media-object" style="background-image: url({{img}}); background-size:100%; background-repeat:no-repeat"></div>
+                  <div class="card-media-object" style="background-image: url({{img}}); background-size:{{img_size}}; background-repeat:no-repeat"></div>
                 </div>
                 <!-- body container -->
                 <div class="card-media-body">
@@ -487,6 +487,7 @@
                     location: 'GHC 4405',
                     date: 'September 13, 2018',
                     img: 'img/events/vatic.png',
+                    img_size: '60%',
                     link: 'https://mailchi.mp/fba94384c553/cmu-ai-welcome-back'
                 },
                 {
@@ -494,6 +495,7 @@
                     location: 'Gates Hillman Center',
                     date: 'March 23, 2018',
                     img: 'img/aiPlusLogo.png',
+                    img_size: '90%',
                     link: 'http://mailchi.mp/7cfd70bac690/cmu-ai-kickoff-572895'
                 }
 
@@ -504,6 +506,7 @@
                     location: 'Casbah',
                     date: 'November 2017',
                     img: 'img/events/roam.jpg',
+                    img_size: '90%',
                     link: 'http://mailchi.mp/a8ede6b26cfe/dinner-with-roam-analytics'
                 },
             ]//,
