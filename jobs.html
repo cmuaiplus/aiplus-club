@@ -272,7 +272,7 @@
             //]
         };
 
-        var template = $('#events-template').html();
+        var template = $('#jobs-template').html();
         for(var theme in JOBS) {
             for(var job of JOBS[theme]) {
                 $('#' + theme).append(Mustache.render(template, job));
